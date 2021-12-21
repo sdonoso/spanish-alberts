@@ -9,7 +9,7 @@ for bs in "${batch_sizes[@]}"; do
             --max_seq_length 512 \
             --pad_to_max_length False \
             --do_lower_case True \
-            --output_dir /data/sdonoso/all_results/ner-c/albert-large/epochs_"$n_epoch"_bs_"$bs"_lr_"$lr" \
+            --output_dir /data/sdonoso/all_results/ner-c/albert-tiny/epochs_"$n_epoch"_bs_"$bs"_lr_"$lr" \
             --use_fast_tokenizer True \
             --language es \
             --train_language es \
@@ -19,7 +19,7 @@ for bs in "${batch_sizes[@]}"; do
             --per_device_train_batch_size "$bs" \
             --learning_rate "$lr" \
             --num_train_epochs "$n_epoch" \
-            --logging_dir /data/sdonoso/all_results/ner-c/albert-large/epochs_"$n_epoch"_bs_"$bs"_lr_"$lr" \
+            --logging_dir /data/sdonoso/all_results/ner-c/albert-tiny/epochs_"$n_epoch"_bs_"$bs"_lr_"$lr" \
             --seed 56 \
             --cache_dir /data/sdonoso/cache \
             --use_auth_token True \
