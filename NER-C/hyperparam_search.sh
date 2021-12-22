@@ -1,5 +1,5 @@
-gradient_accumulation=(2)
-batch_sizes=(8 16 32)
+gradient_accumulation=(4)
+batch_sizes=(4 8 16)
 learning_rates=(1e-5 2e-5 3e-5 5e-5)
 epochs=(2 3 4)
 for ga in "${gradient_accumulation[@]}"; do
