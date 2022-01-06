@@ -5,7 +5,7 @@ from shutil import copy
 def main():
     metric_file = "all_results.json"
     experiments_dir = "/home/sdonoso/data/all_results/ner-c/distillbert"
-    copy_best_model_to = "/home/sdonoso/data/best_models/ner/albert-tiny-spanish-finetuned-ner"
+    copy_best_model_to = "/home/sdonoso/data/best_models/ner/distillbert-base-spanish-uncased-finetuned-ner"
     
     best_metric = 1e5
     best_model_path = None
