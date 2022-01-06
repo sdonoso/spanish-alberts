@@ -17,6 +17,7 @@ for ga in "${gradient_accumulation[@]}"; do
                 --train_language es \
                 --do_train \
                 --do_eval \
+                --gradient_accumulation_steps "$ga" \
                 --per_device_eval_batch_size "$bs" \
                 --per_device_train_batch_size "$bs" \
                 --learning_rate "$lr" \
@@ -26,8 +27,8 @@ for ga in "${gradient_accumulation[@]}"; do
                 --cache_dir /data/sdonoso/cache \
                 --use_auth_token True \
                 --evaluation_strategy steps \
-                --save_steps 500 \
-                --eval_steps 500 \
+                --save_steps 1000 \
+                --eval_steps 1000 \
                 --load_best_model_at_end True \
                 --fp16 \
                 ;
