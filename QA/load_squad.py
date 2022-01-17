@@ -105,6 +105,8 @@ class Squad(datasets.GeneratorBasedBuilder):
         )
 
     def _split_generators(self, dl_manager):
+        # import ipdb
+        # ipdb.set_trace()
         split_names = {'train': datasets.Split.TRAIN,
                        'validation': datasets.Split.VALIDATION,
                        'test': datasets.Split.TEST}

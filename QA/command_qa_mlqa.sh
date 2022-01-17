@@ -1,5 +1,5 @@
 python run_qa.py \
-  --model_name_or_path CenIA/albert_tiny_spanish\
+  --model_name_or_path CenIA/albert_base_spanish \
   --train_file /home/sdonoso/data/datasets/QA/mlqa/es_squad-translate-train-train-v1.1.json \
   --validation_file /home/sdonoso/data/datasets/QA/mlqa/es_squad-translate-train-dev-v1.1.json \
   --max_seq_length 384 \
@@ -14,7 +14,7 @@ python run_qa.py \
   --num_train_epochs 4.0 \
   --warmup_ratio 0.1 \
   --doc_stride 128 \
-  --logging_dir/home/sdonoso/data/all_results/qa/mlqa/albert_tiny \
+  --logging_dir /home/sdonoso/data/all_results/qa/mlqa/albert_tiny \
   --save_strategy epoch \
   --seed 42 \
   --fp16 \
