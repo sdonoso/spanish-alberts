@@ -7,7 +7,7 @@ def main():
     experiments_dir = "/home/sdonoso/data/all_results/qa/tar/albeto_tiny"
     copy_best_model_to = "/home/sdonoso/data/best_models/qa/albert-tiny-spanish-finetuned-qa-tar"
     
-    best_metric = 1e5
+    best_metric = 1e-5
     best_model_path = None
 
     for model_dir in os.listdir(experiments_dir):
