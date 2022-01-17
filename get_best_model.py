@@ -17,8 +17,8 @@ def main():
         metric_file_path = os.path.join(model_dir_path, metric_file)
         with open(metric_file_path) as f:
             data = json.load(f)
-            metric = data["eval_loss"]
-            if metric < best_metric:
+            metric = data["f1"]
+            if metric > best_metric:
                 best_metric = metric
                 best_model_path = model_dir_path
 
